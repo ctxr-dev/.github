@@ -15,17 +15,17 @@
 
 <br /><br />
 
-<a href="https://github.com/ctxr-dev"><img src="https://img.shields.io/badge/GitHub-ctxr--dev-0A0B14?style=for-the-badge&logo=github&logoColor=A78BFA&labelColor=0A0B14" alt="GitHub org" /></a>
-<a href="https://www.npmjs.com/org/ctxr"><img src="https://img.shields.io/badge/npm-%40ctxr-A78BFA?style=for-the-badge&logo=npm&logoColor=ffffff&labelColor=0A0B14" alt="npm org" /></a>
-<a href="https://github.com/ctxr-dev/.github/blob/main/profile/README.md"><img src="https://img.shields.io/badge/License-MIT-22D3EE?style=for-the-badge&labelColor=0A0B14" alt="MIT" /></a>
-<a href="https://modelcontextprotocol.io"><img src="https://img.shields.io/badge/MCP-native-FBBF24?style=for-the-badge&labelColor=0A0B14" alt="MCP native" /></a>
+<a href="https://github.com/ctxr-dev"><img src="https://img.shields.io/badge/GitHub-ctxr--dev-0B1F23?style=for-the-badge&logo=github&logoColor=E5C547&labelColor=0B1F23" alt="GitHub org" /></a>
+<a href="https://www.npmjs.com/org/ctxr"><img src="https://img.shields.io/badge/npm-%40ctxr-E5C547?style=for-the-badge&logo=npm&logoColor=0B1F23&labelColor=0B1F23" alt="npm org" /></a>
+<a href="https://github.com/ctxr-dev/.github/blob/main/profile/README.md"><img src="https://img.shields.io/badge/License-MIT-3DBE9C?style=for-the-badge&labelColor=0B1F23" alt="MIT" /></a>
+<a href="https://modelcontextprotocol.io"><img src="https://img.shields.io/badge/MCP-native-A05080?style=for-the-badge&labelColor=0B1F23" alt="MCP native" /></a>
 
 <br />
 
-<a href="https://docs.claude.com/en/docs/agentic-coding/claude-code"><img src="https://img.shields.io/badge/Claude%20Code-compatible-D97757?style=flat-square&labelColor=0A0B14" alt="Claude Code" /></a>
-<a href="https://github.com/openai/codex"><img src="https://img.shields.io/badge/Codex-compatible-10A37F?style=flat-square&logo=openai&logoColor=white&labelColor=0A0B14" alt="Codex" /></a>
-<a href="https://cursor.com"><img src="https://img.shields.io/badge/Cursor-compatible-94A3B8?style=flat-square&labelColor=0A0B14" alt="Cursor" /></a>
-<a href="https://github.com/ctxr-dev"><img src="https://img.shields.io/badge/Any%20MCP%20client-yes-A78BFA?style=flat-square&labelColor=0A0B14" alt="Any MCP client" /></a>
+<a href="https://docs.claude.com/en/docs/agentic-coding/claude-code"><img src="https://img.shields.io/badge/Claude%20Code-compatible-D97757?style=flat-square&labelColor=0B1F23" alt="Claude Code" /></a>
+<a href="https://github.com/openai/codex"><img src="https://img.shields.io/badge/Codex-compatible-10A37F?style=flat-square&logo=openai&logoColor=white&labelColor=0B1F23" alt="Codex" /></a>
+<a href="https://cursor.com"><img src="https://img.shields.io/badge/Cursor-compatible-94A99A?style=flat-square&labelColor=0B1F23" alt="Cursor" /></a>
+<a href="https://github.com/ctxr-dev"><img src="https://img.shields.io/badge/Any%20MCP%20client-yes-3DBE9C?style=flat-square&labelColor=0B1F23" alt="Any MCP client" /></a>
 
 </div>
 
@@ -112,7 +112,7 @@ you can switch later. Install one, not both.
 ## 🗺️ How the pieces fit
 
 ```mermaid
-%%{init: {'theme':'base','themeVariables':{'background':'#0A0B14','primaryColor':'#12141F','primaryTextColor':'#FAFAFA','primaryBorderColor':'#A78BFA','secondaryColor':'#1a1d2e','tertiaryColor':'#0F1117','lineColor':'#22D3EE','clusterBkg':'#0F1117','clusterBorder':'#1d2237','fontFamily':'ui-monospace, JetBrains Mono, monospace'}}}%%
+%%{init: {'theme':'base','themeVariables':{'background':'#0B1F23','primaryColor':'#102E32','primaryTextColor':'#F0E8D5','primaryBorderColor':'#E5C547','secondaryColor':'#163A3D','tertiaryColor':'#0A1E22','lineColor':'#3DBE9C','clusterBkg':'#0A1E22','clusterBorder':'#1A3A3A','fontFamily':'ui-monospace, JetBrains Mono, monospace'}}}%%
 flowchart TB
     user(["👩‍💻 You"])
     agent{{"🤖 Your agent\n Claude Code · Codex · Cursor · any MCP client"}}
