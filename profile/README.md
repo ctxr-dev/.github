@@ -1,5 +1,5 @@
 <!--
-  ctxr-dev org profile.
+  Contexter org profile.
 
   GitHub renders this file at https://github.com/ctxr-dev because it
   lives at `profile/README.md` inside the org's `.github` repo. Edit
@@ -10,7 +10,7 @@
 <div align="center">
 
 <a href="https://github.com/ctxr-dev">
-  <img src="https://raw.githubusercontent.com/ctxr-dev/.github/main/profile/assets/hero.svg" alt="ctxr-dev — composable tools for AI coding agents" width="100%" />
+  <img src="https://raw.githubusercontent.com/ctxr-dev/.github/main/profile/assets/hero.svg" alt="Contexter — composable tools for AI coding agents" width="100%" />
 </a>
 
 <br /><br />
@@ -65,7 +65,7 @@ you can switch later. Install one, not both.
   <thead>
     <tr>
       <th></th>
-      <th align="center">📒 Wiki <sub>(default)</sub></th>
+      <th align="center">📒 Wiki<br/><sub>recommended</sub></th>
       <th align="center">🧬 RAG</th>
     </tr>
   </thead>
@@ -183,11 +183,11 @@ flowchart TB
 | Agent | Use it to | Badges |
 | --- | --- | --- |
 | [`@ctxr/agent-staff-engineer`](https://github.com/ctxr-dev/agent-staff-engineer) | drive a ticket to an open PR, then hand off before merge (pulls in `skill-llm-wiki`, reviews via `skill-code-review`) | [![npm](https://img.shields.io/npm/v/@ctxr/agent-staff-engineer?style=flat-square&logo=npm&label=)](https://www.npmjs.com/package/@ctxr/agent-staff-engineer) [![stars](https://img.shields.io/github/stars/ctxr-dev/agent-staff-engineer?style=flat-square&label=%E2%98%85)](https://github.com/ctxr-dev/agent-staff-engineer) |
-| [`@ctxr/agent-codebase-explorer`](https://github.com/ctxr-dev/agent-codebase-explorer) 🆕 | read-only "where is X / what references Y" search subagent, capped structured reports | [![npm](https://img.shields.io/npm/v/@ctxr/agent-codebase-explorer?style=flat-square&logo=npm&label=)](https://www.npmjs.com/package/@ctxr/agent-codebase-explorer) [![stars](https://img.shields.io/github/stars/ctxr-dev/agent-codebase-explorer?style=flat-square&label=%E2%98%85)](https://github.com/ctxr-dev/agent-codebase-explorer) |
-| [`@ctxr/agent-plan-reviewer`](https://github.com/ctxr-dev/agent-plan-reviewer) 🆕 | adversarially review a plan or design *before* you confirm it: gaps, blind spots, edge cases, infeasibilities | [![npm](https://img.shields.io/npm/v/@ctxr/agent-plan-reviewer?style=flat-square&logo=npm&label=)](https://www.npmjs.com/package/@ctxr/agent-plan-reviewer) [![stars](https://img.shields.io/github/stars/ctxr-dev/agent-plan-reviewer?style=flat-square&label=%E2%98%85)](https://github.com/ctxr-dev/agent-plan-reviewer) |
-| [`@ctxr/agent-implementation-auditor`](https://github.com/ctxr-dev/agent-implementation-auditor) 🆕 | post-build conformance audit: missed plan items, divergences, cross-implementation parity | [![npm](https://img.shields.io/npm/v/@ctxr/agent-implementation-auditor?style=flat-square&logo=npm&label=)](https://www.npmjs.com/package/@ctxr/agent-implementation-auditor) [![stars](https://img.shields.io/github/stars/ctxr-dev/agent-implementation-auditor?style=flat-square&label=%E2%98%85)](https://github.com/ctxr-dev/agent-implementation-auditor) |
+| [`@ctxr/agent-codebase-explorer`](https://github.com/ctxr-dev/agent-codebase-explorer) | read-only "where is X / what references Y" search subagent, capped structured reports | [![npm](https://img.shields.io/npm/v/@ctxr/agent-codebase-explorer?style=flat-square&logo=npm&label=)](https://www.npmjs.com/package/@ctxr/agent-codebase-explorer) [![stars](https://img.shields.io/github/stars/ctxr-dev/agent-codebase-explorer?style=flat-square&label=%E2%98%85)](https://github.com/ctxr-dev/agent-codebase-explorer) |
+| [`@ctxr/agent-plan-reviewer`](https://github.com/ctxr-dev/agent-plan-reviewer) | adversarially review a plan or design *before* you confirm it: gaps, blind spots, edge cases, infeasibilities | [![npm](https://img.shields.io/npm/v/@ctxr/agent-plan-reviewer?style=flat-square&logo=npm&label=)](https://www.npmjs.com/package/@ctxr/agent-plan-reviewer) [![stars](https://img.shields.io/github/stars/ctxr-dev/agent-plan-reviewer?style=flat-square&label=%E2%98%85)](https://github.com/ctxr-dev/agent-plan-reviewer) |
+| [`@ctxr/agent-implementation-auditor`](https://github.com/ctxr-dev/agent-implementation-auditor) | post-build conformance audit: missed plan items, divergences, cross-implementation parity | [![npm](https://img.shields.io/npm/v/@ctxr/agent-implementation-auditor?style=flat-square&logo=npm&label=)](https://www.npmjs.com/package/@ctxr/agent-implementation-auditor) [![stars](https://img.shields.io/github/stars/ctxr-dev/agent-implementation-auditor?style=flat-square&label=%E2%98%85)](https://github.com/ctxr-dev/agent-implementation-auditor) |
 
-> 💡 The three 🆕 agents are **read-only by design**: their tool surface is scoped to `Read / Grep / Glob / Bash`, so a flaky MCP connector cannot kill subagent init. Drop them in front of the staff-engineer loop or use them standalone.
+> 💡 The codebase-explorer, plan-reviewer, and implementation-auditor are **read-only by design**: their tool surface is scoped to `Read / Grep / Glob / Bash`, so a flaky MCP connector cannot kill subagent init. Drop them in front of the staff-engineer loop or use them standalone.
 
 ---
 
@@ -270,5 +270,5 @@ All repos are MIT licensed and developed in the open at **[github.com/ctxr-dev](
   <br/>
   <sub><b>Built in the open for agents that ship.</b></sub>
   <br/><br/>
-  <img src="https://raw.githubusercontent.com/ctxr-dev/.github/main/profile/assets/footer.svg" alt="ctxr-dev signal trail" width="100%" />
+  <img src="https://raw.githubusercontent.com/ctxr-dev/.github/main/profile/assets/footer.svg" alt="Contexter signal trail" width="100%" />
 </div>
