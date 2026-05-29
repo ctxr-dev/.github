@@ -33,21 +33,23 @@ When you violate any of these, the user will catch it. Self-check before pushing
 
 ## Design language (committed lane)
 
-Lane: **dark-futurist / industrial**. Avoids the AI cliche of Inter-on-white + purple-pink linear gradient + glassmorphism. See `references/design.md` in `@ctxr/skill-frontend-excellence` for the underlying playbook.
+Lane: **neo-noir cyberpunk**. Reference: the Cyberpunk 2077 *Used To Live Here* still (dominant teal-cyan bar-interior glow with warm gold signage and muted magenta wall accents on deep teal-black). Drops the arcade-neon violet/cyan story; this is cinematic, not glitchy. See `references/design.md` in `@ctxr/skill-frontend-excellence` for the underlying playbook.
 
 ### Palette (semantic tokens)
 
 | Token | Hex | Role |
 | --- | --- | --- |
-| midnight | `#0A0B14` | Dominant background, badge label, never pure black |
-| violet | `#A78BFA` | Brand primary; nodes, edges, npm/MCP badges, traveling messages |
-| cyan | `#22D3EE` | Signal accent; HUD brackets, MIT badge, terminal `$`, cursor, short-hop messages |
-| amber | `#FBBF24` | Highlight; sparkles, MCP-native badge, long-bridge messages |
-| foreground | `#FAFAFA` | Wordmark, primary text |
-| muted | `#94A3B8` | Subtitle, terminal flag text |
-| meta | `#475569` / `#64748B` | Eyebrow/meta/stats text |
-| grid | `#1d2237` | Decorative grid lines |
-| deep-violet | `#7C3AED` | Halo mid-stop for atmospheric depth |
+| bg            | `#0B1F23` | Dominant background, badge `labelColor`, eyebrow chip text on gold |
+| teal-bright   | `#3DBE9C` | Brand signal: HUD rules, scan beam, MIT badge, terminal `$`, cursor, bridge packet |
+| teal-dim      | `#1A6E64` | Static circuit traces |
+| gold          | `#E5C547` | Brand primary: HUD brackets, key nodes, npm/GitHub badges, energy packets, wordmark halo, eyebrow chip background, `@ctxr/` in terminal |
+| gold-dim      | `#C19A4A` | Dim node bodies and small-node fills |
+| magenta       | `#A05080` | Accent nodes, MCP-native badge, footer packet, cluster halos |
+| cream         | `#F0E8D5` | Wordmark, primary terminal text |
+| cream-muted   | `#94A99A` | Subtitle, Cursor badge text |
+| meta-teal     | `#5A8F86` | Top-right meta tag, footer caption |
+| stats-muted   | `#7A8A82` | Stats line, terminal `install ` flag |
+| scanline      | `#3DBE9C @ 5.5%` | CRT scanlines pattern |
 
 ### Typography
 
@@ -77,10 +79,14 @@ One family across the whole profile: `ui-monospace, SFMono-Regular, "JetBrains M
 
 ### What NOT to do
 
-- Purple-to-pink linear gradients.
+- Purple-to-pink linear gradients (the AI cliche).
+- Violet primary on midnight (the previous arcade-neon iteration) — the committed lane is teal-cyan + warm gold, not violet.
+- Chromatic-aberration RGB-split on the wordmark or glitch bursts that intensify ghost text. The lane is cinematic neo-noir, not arcade-glitchy.
 - `capsule-render` headers or `readme-typing-svg` banners (we have the bespoke hero instead).
-- Stock badge colors that fight the palette (green MIT, default blue MCP, etc.). Repalette to violet/cyan/amber on a `0A0B14` label.
-- Centered-everything monotony. The hero is asymmetric: constellation on both sides of the wordmark, eyebrow chip top-left, meta tag top-right, stats line below the typing terminal.
+- Stock badge colors that fight the palette. Repalette to gold/teal/magenta on `labelColor=0B1F23`.
+- Diagonal constellation edges. The hero network is ORTHOGONAL only (horizontal + vertical segments forming circuit-board traces); one bridge routes up over the title via 90-degree corners.
+- Circular nodes. The hero uses small filled squares (`<rect>`) with one or two larger key squares per cluster; an inner dark micro-square inside the key node reads as a status indicator.
+- Centered-everything monotony. The hero is asymmetric: clusters on both sides of the wordmark, eyebrow chip top-left, meta tag top-right, stats line below the typing terminal.
 - More than one type family. More than 4 weights.
 - Inline `<svg>` in markdown (GitHub sanitises it). Always serve hosted SVGs via `<img src="https://raw.githubusercontent.com/...">`.
 
@@ -138,7 +144,7 @@ When you add a row:
 
 ### Mermaid theme
 
-The mermaid block in `profile/README.md` uses an `%%{init: ...}%%` directive with these tokens: `background:#0A0B14, primaryColor:#12141F, primaryTextColor:#FAFAFA, primaryBorderColor:#A78BFA, secondaryColor:#1a1d2e, tertiaryColor:#0F1117, lineColor:#22D3EE, clusterBkg:#0F1117, clusterBorder:#1d2237`. Keep these in lockstep with the SVG palette if you adjust either.
+The mermaid block in `profile/README.md` uses an `%%{init: ...}%%` directive with these tokens: `background:#0B1F23, primaryColor:#102E32, primaryTextColor:#F0E8D5, primaryBorderColor:#E5C547, secondaryColor:#163A3D, tertiaryColor:#0A1E22, lineColor:#3DBE9C, clusterBkg:#0A1E22, clusterBorder:#1A3A3A`. Keep these in lockstep with the SVG palette if you adjust either.
 
 ### Memory column
 
