@@ -82,27 +82,27 @@
 
     <!-- 15-second typing loop. Each phrase reveals via a clipPath whose rect.width animates.
          Phrase widths: P1 270, P2 285, P3 235, P4 275, P5 320 (px in this textLength). -->
-    <clipPath id="typeP1"><rect x="0" y="-16" width="0" height="22">
+    <clipPath id="typeP1" clipPathUnits="userSpaceOnUse"><rect x="135" y="-16" width="0" height="22">
       <animate attributeName="width" dur="15s" repeatCount="indefinite"
         values="0;270;270;0;0;0"
         keyTimes="0;0.080;0.147;0.187;0.200;1"/>
     </rect></clipPath>
-    <clipPath id="typeP2"><rect x="0" y="-16" width="0" height="22">
+    <clipPath id="typeP2" clipPathUnits="userSpaceOnUse"><rect x="135" y="-16" width="0" height="22">
       <animate attributeName="width" dur="15s" repeatCount="indefinite"
         values="0;0;285;285;0;0;0"
         keyTimes="0;0.200;0.280;0.347;0.387;0.400;1"/>
     </rect></clipPath>
-    <clipPath id="typeP3"><rect x="0" y="-16" width="0" height="22">
+    <clipPath id="typeP3" clipPathUnits="userSpaceOnUse"><rect x="135" y="-16" width="0" height="22">
       <animate attributeName="width" dur="15s" repeatCount="indefinite"
         values="0;0;235;235;0;0;0"
         keyTimes="0;0.400;0.480;0.547;0.587;0.600;1"/>
     </rect></clipPath>
-    <clipPath id="typeP4"><rect x="0" y="-16" width="0" height="22">
+    <clipPath id="typeP4" clipPathUnits="userSpaceOnUse"><rect x="135" y="-16" width="0" height="22">
       <animate attributeName="width" dur="15s" repeatCount="indefinite"
         values="0;0;275;275;0;0;0"
         keyTimes="0;0.600;0.680;0.747;0.787;0.800;1"/>
     </rect></clipPath>
-    <clipPath id="typeP5"><rect x="0" y="-16" width="0" height="22">
+    <clipPath id="typeP5" clipPathUnits="userSpaceOnUse"><rect x="135" y="-16" width="0" height="22">
       <animate attributeName="width" dur="15s" repeatCount="indefinite"
         values="0;0;320;320;0;0"
         keyTimes="0;0.800;0.880;0.947;0.987;1"/>
@@ -252,37 +252,17 @@
 
   <!-- typing terminal prompt -->
   <g transform="translate(460 285)">
-    <!-- prefix (always visible). textLength forces a deterministic 135px width so cursor + clipPath positions are stable. -->
-    <text class="term" x="0" y="0" textLength="135" lengthAdjust="spacingAndGlyphs">
-      <tspan fill="#22D3EE">$</tspan><tspan fill="#94A3B8"> npx</tspan><tspan fill="#FAFAFA"> @ctxr/kit </tspan>
-    </text>
+    <!-- prefix (always visible). textLength forces a deterministic 135px width so cursor + clipPath positions are stable.
+         xml:space="preserve" keeps the trailing space after @ctxr/kit so the suffix is not glued to "install".
+         Opening tag inlined with first tspan to avoid pretty-print whitespace nodes leaking in under preserve. -->
+    <text class="term" x="0" y="0" textLength="135" lengthAdjust="spacingAndGlyphs" xml:space="preserve"><tspan fill="#22D3EE">$</tspan><tspan fill="#94A3B8"> npx</tspan><tspan fill="#FAFAFA"> @ctxr/kit </tspan></text>
 
     <!-- 5 phrases, each clipped by an animated rect that grows then shrinks during its 3-second slot in the 15s loop. -->
-    <g clip-path="url(#typeP1)">
-      <text class="term" x="135" y="0" textLength="270" lengthAdjust="spacingAndGlyphs">
-        <tspan fill="#94A3B8">install </tspan><tspan fill="#A78BFA">@ctxr/</tspan><tspan fill="#FAFAFA">skill-code-review</tspan>
-      </text>
-    </g>
-    <g clip-path="url(#typeP2)">
-      <text class="term" x="135" y="0" textLength="285" lengthAdjust="spacingAndGlyphs">
-        <tspan fill="#94A3B8">install </tspan><tspan fill="#A78BFA">@ctxr/</tspan><tspan fill="#FAFAFA">agent-staff-engineer</tspan>
-      </text>
-    </g>
-    <g clip-path="url(#typeP3)">
-      <text class="term" x="135" y="0" textLength="235" lengthAdjust="spacingAndGlyphs">
-        <tspan fill="#94A3B8">install </tspan><tspan fill="#A78BFA">@ctxr/</tspan><tspan fill="#FAFAFA">skill-llm-wiki</tspan>
-      </text>
-    </g>
-    <g clip-path="url(#typeP4)">
-      <text class="term" x="135" y="0" textLength="275" lengthAdjust="spacingAndGlyphs">
-        <tspan fill="#94A3B8">install </tspan><tspan fill="#A78BFA">@ctxr/</tspan><tspan fill="#FAFAFA">agent-plan-reviewer</tspan>
-      </text>
-    </g>
-    <g clip-path="url(#typeP5)">
-      <text class="term" x="135" y="0" textLength="320" lengthAdjust="spacingAndGlyphs">
-        <tspan fill="#94A3B8">install </tspan><tspan fill="#A78BFA">@ctxr/</tspan><tspan fill="#FAFAFA">agent-codebase-explorer</tspan>
-      </text>
-    </g>
+    <g clip-path="url(#typeP1)"><text class="term" x="135" y="0" textLength="270" lengthAdjust="spacingAndGlyphs" xml:space="preserve"><tspan fill="#94A3B8">install </tspan><tspan fill="#A78BFA">@ctxr/</tspan><tspan fill="#FAFAFA">skill-code-review</tspan></text></g>
+    <g clip-path="url(#typeP2)"><text class="term" x="135" y="0" textLength="285" lengthAdjust="spacingAndGlyphs" xml:space="preserve"><tspan fill="#94A3B8">install </tspan><tspan fill="#A78BFA">@ctxr/</tspan><tspan fill="#FAFAFA">agent-staff-engineer</tspan></text></g>
+    <g clip-path="url(#typeP3)"><text class="term" x="135" y="0" textLength="235" lengthAdjust="spacingAndGlyphs" xml:space="preserve"><tspan fill="#94A3B8">install </tspan><tspan fill="#A78BFA">@ctxr/</tspan><tspan fill="#FAFAFA">skill-llm-wiki</tspan></text></g>
+    <g clip-path="url(#typeP4)"><text class="term" x="135" y="0" textLength="275" lengthAdjust="spacingAndGlyphs" xml:space="preserve"><tspan fill="#94A3B8">install </tspan><tspan fill="#A78BFA">@ctxr/</tspan><tspan fill="#FAFAFA">agent-plan-reviewer</tspan></text></g>
+    <g clip-path="url(#typeP5)"><text class="term" x="135" y="0" textLength="320" lengthAdjust="spacingAndGlyphs" xml:space="preserve"><tspan fill="#94A3B8">install </tspan><tspan fill="#A78BFA">@ctxr/</tspan><tspan fill="#FAFAFA">agent-codebase-explorer</tspan></text></g>
 
     <!-- cursor: x follows the end of the currently-typed phrase across the 15s loop; opacity blinks every second. -->
     <rect x="135" y="-13" width="9" height="17" fill="#22D3EE">
