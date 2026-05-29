@@ -145,6 +145,18 @@
   <line class="rule" x1="0" y1="1"   x2="1400" y2="1"/>
   <line class="rule" x1="0" y1="379" x2="1400" y2="379"/>
 
+  <!-- CRT scan beam: one horizontal hairline + soft glow band drifting top to bottom every 10s,
+       then jumping back. Renders behind the constellation. Iconic cyberpunk move at low opacity
+       so it reads as ambient atmosphere, not the focal element. -->
+  <g>
+    <rect x="0" y="-2" width="1400" height="4" fill="#22D3EE" opacity="0.08"/>
+    <line x1="0" y1="0" x2="1400" y2="0" stroke="#22D3EE" stroke-opacity="0.45" stroke-width="0.6"/>
+    <animateTransform attributeName="transform" type="translate"
+      values="0 30; 0 372; 0 30"
+      keyTimes="0; 0.92; 1"
+      dur="10s" repeatCount="indefinite"/>
+  </g>
+
   <!-- HUD corner brackets -->
   <g class="hud">
     <path d="M 18 12 L 18 32 M 18 12 L 38 12"/>
@@ -195,12 +207,22 @@
     <circle cx="1310" cy="305" r="20" fill="url(#nodeGlow)"/>
   </g>
 
-  <!-- Only FOUR traveling cyan messages now (was 10), slowed to ~3.4s each. -->
-  <g class="msg">
-    <circle r="2.4"><animateMotion dur="3.6s" repeatCount="indefinite" path="M 100 55 L 230 130"/></circle>
-    <circle r="2.4"><animateMotion dur="3.6s" begin="1.8s" repeatCount="indefinite" path="M 270 295 L 410 215"/></circle>
-    <circle r="2.4"><animateMotion dur="3.6s" repeatCount="indefinite" path="M 1100 130 L 1280 55"/></circle>
-    <circle r="2.4"><animateMotion dur="3.6s" begin="1.8s" repeatCount="indefinite" path="M 980 290 L 1150 235"/></circle>
+  <!-- Edge energy: stroke-dashoffset on selected edges. Feels like packets flowing through a circuit,
+       not particles drifting through space. pathLength=100 normalises the dash motion;
+       dasharray "14 100" guarantees exactly one dash visible at a time per edge. Smooth loop. -->
+  <g fill="none" stroke="#22D3EE" stroke-width="1.8" stroke-linecap="round" stroke-opacity="0.95">
+    <path d="M 100 55 L 230 130" pathLength="100" stroke-dasharray="14 100">
+      <animate attributeName="stroke-dashoffset" from="0" to="-114" dur="3.6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 270 295 L 410 215" pathLength="100" stroke-dasharray="14 100">
+      <animate attributeName="stroke-dashoffset" from="0" to="-114" dur="3.6s" begin="0.9s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 1100 130 L 1280 55" pathLength="100" stroke-dasharray="14 100">
+      <animate attributeName="stroke-dashoffset" from="0" to="-114" dur="3.6s" begin="1.8s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 980 290 L 1150 235" pathLength="100" stroke-dasharray="14 100">
+      <animate attributeName="stroke-dashoffset" from="0" to="-114" dur="3.6s" begin="2.7s" repeatCount="indefinite"/>
+    </path>
   </g>
 
   <!-- nodes -->
@@ -228,12 +250,13 @@
   <!-- meta tag top-right (tightened) -->
   <text class="meta" x="1360" y="44" text-anchor="end">CLAUDE · CODEX · CURSOR · MCP</text>
 
-  <!-- Title wordmark with chromatic-aberration ghosts + neon-glow filter.
-       Violet ghost shifted -1.5px, cyan ghost shifted +1.5px, white on top.
-       Static = cyberpunk feel without flicker. -->
+  <!-- Title wordmark: chromatic-aberration ghosts + neon-glow filter.
+       At rest: violet at x-1.5, cyan at x+1.5, white centered.
+       Glitch burst: every 6s the ghosts snap out to x-5 / x+5 with 0.95 opacity for ~0.3s,
+       then snap back. calcMode="discrete" makes the change sharp, not interpolated. -->
   <g filter="url(#neonGlow)">
-    <text class="title" x="698.5" y="172" text-anchor="middle" fill="#B084FF" opacity="0.55">Contexter</text>
-    <text class="title" x="701.5" y="172" text-anchor="middle" fill="#22D3EE" opacity="0.45">Contexter</text>
+    <text class="title" x="698.5" y="172" text-anchor="middle" fill="#B084FF" opacity="0.55">Contexter<animate attributeName="x" dur="6s" repeatCount="indefinite" calcMode="discrete" values="698.5;694;698.5" keyTimes="0;0.5;0.55"/><animate attributeName="opacity" dur="6s" repeatCount="indefinite" calcMode="discrete" values="0.55;0.95;0.55" keyTimes="0;0.5;0.55"/></text>
+    <text class="title" x="701.5" y="172" text-anchor="middle" fill="#22D3EE" opacity="0.45">Contexter<animate attributeName="x" dur="6s" repeatCount="indefinite" calcMode="discrete" values="701.5;706;701.5" keyTimes="0;0.5;0.55"/><animate attributeName="opacity" dur="6s" repeatCount="indefinite" calcMode="discrete" values="0.45;0.9;0.45" keyTimes="0;0.5;0.55"/></text>
     <text class="title" x="700"   y="172" text-anchor="middle" fill="#FAFAFA">Contexter</text>
   </g>
 
