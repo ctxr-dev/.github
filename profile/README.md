@@ -10,28 +10,22 @@
 <div align="center">
 
 <a href="https://github.com/ctxr-dev">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,2,8,20,30&height=220&section=header&text=ctxr-dev&fontSize=80&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Composable%20tools%20for%20AI%20coding%20agents&descSize=20&descAlignY=62&descAlign=50" alt="ctxr-dev" />
-</a>
-
-<br />
-
-<a href="https://github.com/ctxr-dev">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&pause=1200&color=8B5CF6&center=true&vCenter=true&multiline=false&width=720&height=46&lines=Claude+Code+%E2%80%A2+Codex+%E2%80%A2+Cursor+%E2%80%A2+any+MCP+client;Install+only+what+you+need.;Skills.+Agents.+Memory.+Methodology." alt="tagline" />
+  <img src="https://raw.githubusercontent.com/ctxr-dev/.github/main/profile/assets/hero.svg" alt="ctxr-dev — composable tools for AI coding agents" width="100%" />
 </a>
 
 <br /><br />
 
-<a href="https://github.com/ctxr-dev"><img src="https://img.shields.io/badge/GitHub-ctxr--dev-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub org" /></a>
-<a href="https://www.npmjs.com/org/ctxr"><img src="https://img.shields.io/badge/npm-%40ctxr-CB3837?style=for-the-badge&logo=npm&logoColor=white" alt="npm org" /></a>
-<a href="https://github.com/ctxr-dev/start/blob/main/README.md"><img src="https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge" alt="MIT" /></a>
-<a href="https://modelcontextprotocol.io"><img src="https://img.shields.io/badge/MCP-native-3776AB?style=for-the-badge" alt="MCP native" /></a>
+<a href="https://github.com/ctxr-dev"><img src="https://img.shields.io/badge/GitHub-ctxr--dev-0A0B14?style=for-the-badge&logo=github&logoColor=A78BFA&labelColor=0A0B14" alt="GitHub org" /></a>
+<a href="https://www.npmjs.com/org/ctxr"><img src="https://img.shields.io/badge/npm-%40ctxr-A78BFA?style=for-the-badge&logo=npm&logoColor=ffffff&labelColor=0A0B14" alt="npm org" /></a>
+<a href="https://github.com/ctxr-dev/.github/blob/main/profile/README.md"><img src="https://img.shields.io/badge/License-MIT-22D3EE?style=for-the-badge&labelColor=0A0B14" alt="MIT" /></a>
+<a href="https://modelcontextprotocol.io"><img src="https://img.shields.io/badge/MCP-native-FBBF24?style=for-the-badge&labelColor=0A0B14" alt="MCP native" /></a>
 
 <br />
 
-<a href="https://docs.claude.com/en/docs/agentic-coding/claude-code"><img src="https://img.shields.io/badge/Claude%20Code-compatible-D97757?style=flat-square" alt="Claude Code" /></a>
-<a href="https://github.com/openai/codex"><img src="https://img.shields.io/badge/Codex-compatible-10A37F?style=flat-square&logo=openai&logoColor=white" alt="Codex" /></a>
-<a href="https://cursor.com"><img src="https://img.shields.io/badge/Cursor-compatible-000000?style=flat-square" alt="Cursor" /></a>
-<a href="https://github.com/ctxr-dev"><img src="https://img.shields.io/badge/Any%20MCP%20client-yes-6366F1?style=flat-square" alt="Any MCP client" /></a>
+<a href="https://docs.claude.com/en/docs/agentic-coding/claude-code"><img src="https://img.shields.io/badge/Claude%20Code-compatible-D97757?style=flat-square&labelColor=0A0B14" alt="Claude Code" /></a>
+<a href="https://github.com/openai/codex"><img src="https://img.shields.io/badge/Codex-compatible-10A37F?style=flat-square&logo=openai&logoColor=white&labelColor=0A0B14" alt="Codex" /></a>
+<a href="https://cursor.com"><img src="https://img.shields.io/badge/Cursor-compatible-94A3B8?style=flat-square&labelColor=0A0B14" alt="Cursor" /></a>
+<a href="https://github.com/ctxr-dev"><img src="https://img.shields.io/badge/Any%20MCP%20client-yes-A78BFA?style=flat-square&labelColor=0A0B14" alt="Any MCP client" /></a>
 
 </div>
 
@@ -118,7 +112,7 @@ you can switch later. Install one, not both.
 ## 🗺️ How the pieces fit
 
 ```mermaid
-%%{init: {'theme':'base','themeVariables':{'primaryColor':'#1e1b4b','primaryTextColor':'#fafafa','primaryBorderColor':'#8B5CF6','lineColor':'#a78bfa','fontFamily':'JetBrains Mono'}}}%%
+%%{init: {'theme':'base','themeVariables':{'background':'#0A0B14','primaryColor':'#12141F','primaryTextColor':'#FAFAFA','primaryBorderColor':'#A78BFA','secondaryColor':'#1a1d2e','tertiaryColor':'#0F1117','lineColor':'#22D3EE','clusterBkg':'#0F1117','clusterBorder':'#1d2237','fontFamily':'ui-monospace, JetBrains Mono, monospace'}}}%%
 flowchart TB
     user(["👩‍💻 You"])
     agent{{"🤖 Your agent\n Claude Code · Codex · Cursor · any MCP client"}}
@@ -274,7 +268,7 @@ All repos are MIT licensed and developed in the open at **[github.com/ctxr-dev](
 
 <div align="center">
   <br/>
-  <sub>Built with ❤️ for agents that ship.</sub>
+  <sub><b>Built in the open for agents that ship.</b></sub>
   <br/><br/>
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=20,8,2,12,30&height=120&section=footer" alt="footer" />
+  <img src="https://raw.githubusercontent.com/ctxr-dev/.github/main/profile/assets/footer.svg" alt="ctxr-dev signal trail" width="100%" />
 </div>
