@@ -41,14 +41,14 @@
 
 ```bash
 # 1. Run the installer (no global install)
-npx @ctxr/kit
+npx @ctxr/kit@latest
 
 # 2. Pick a memory backend (one prompt, one decision)
 #    Wiki  → https://github.com/ctxr-dev/llm-wiki-memory#install
 #    RAG   → https://github.com/ctxr-dev/memory#install
 
 # 3. Add the skill almost everyone wants
-npx @ctxr/kit install @ctxr/skill-code-review
+npx @ctxr/kit@latest install @ctxr/skill-code-review
 ```
 
 That is the whole start. Everything below is opt-in.
@@ -160,13 +160,13 @@ flowchart TB
 
 | Package | Use it to | Badges |
 | --- | --- | --- |
-| [`@ctxr/kit`](https://github.com/ctxr-dev/kit) | install, update, and scaffold skills and agents (`npx @ctxr/kit`, no global) | [![npm](https://img.shields.io/npm/v/@ctxr/kit?style=flat-square&logo=npm&label=npm)](https://www.npmjs.com/package/@ctxr/kit) [![stars](https://img.shields.io/github/stars/ctxr-dev/kit?style=flat-square&label=%E2%98%85)](https://github.com/ctxr-dev/kit) |
+| [`@ctxr/kit`](https://github.com/ctxr-dev/kit) | install, update, and scaffold skills and agents (`npx @ctxr/kit@latest`, no global) | [![npm](https://img.shields.io/npm/v/@ctxr/kit?style=flat-square&logo=npm&label=npm)](https://www.npmjs.com/package/@ctxr/kit) [![stars](https://img.shields.io/github/stars/ctxr-dev/kit?style=flat-square&label=%E2%98%85)](https://github.com/ctxr-dev/kit) |
 
 ---
 
 ## 🛠️ Skills
 
-> Install any skill with `npx @ctxr/kit install @ctxr/<name>`.
+> Install any skill with `npx @ctxr/kit@latest install @ctxr/<name>`.
 
 | Skill | Use it to | Badges |
 | --- | --- | --- |
@@ -178,7 +178,7 @@ flowchart TB
 
 ## 🧑‍🚀 Agents
 
-> Install with `npx @ctxr/kit install @ctxr/<name>`.
+> Install with `npx @ctxr/kit@latest install @ctxr/<name>`.
 
 | Agent | Use it to | Badges |
 | --- | --- | --- |
