@@ -51,6 +51,11 @@ npx @ctxr/kit@latest
 npx @ctxr/kit@latest install @ctxr/skill-code-review
 ```
 
+Optionally from [AI Hero](https://www.aihero.dev/5-agent-skills-i-use-every-day)
+```bash
+npx skills@latest add mattpocock/skills
+```
+
 That is the whole start. Everything below is opt-in.
 
 ---
